@@ -111,12 +111,14 @@ a {
   color: inherit;
 }
 
+/* Navbar */
+
 .navbar {
   position: absolute;
   top: 0;
   z-index: 5;
   color: #fff;
-  padding: 40px 0 27px;
+  padding: 43px 0 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   left: 50px;
   right: 50px;
@@ -193,6 +195,10 @@ span.top-menu__link {
   border-radius: var(--radius-style);
 }
 
+.menu-container {
+  position: relative;
+}
+
 .menu-toggle {
   width: 22px;
   height: 22px;
@@ -202,10 +208,23 @@ span.top-menu__link {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  top: 3px;
+  display: none;
+  right: 0;
 }
 
-/* Navbar */
+.menu-toggle_active {
+  background-image: url(../img/interface/x.svg);
+}
 
+.top-menu.top-menu_active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Slider */
+
+.home-slider {
   position: relative;
   height: 100vh;
   color: #fff;

@@ -1,0 +1,28 @@
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+  .top-menu__item {
+    margin-right: 0;
+  }
+
+  .top-menu__link {
+    padding: 7.5px 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .top-menu {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+}
