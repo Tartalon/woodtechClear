@@ -1,0 +1,213 @@
+/* vars ================================ */
+
+/* Colors */
+
+:root {
+  --accent: #f88500;
+  --text: #333;
+  --dark: #202328;
+  --deep: #171a1a;
+  --dark-header: #6f7a8b;
+  --dark-div: #2d3038;
+  --light-bg: #fafafa;
+  --light-disabled: #e4e6e8;
+  --light-div: #e7e7e8;
+  --middle-gray: rgba(111, 122, 139, 0.75);
+  --text-light: #999;
+
+  /* Fonts */
+
+  --regular-text: 16px;
+  --small-text: 14px;
+  --lineheight: 1.75;
+  --userfont: raleway-wt, sans-serif;
+  --systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+
+  /* Style */
+
+  --radius: 5px;
+  --radius-style: 0 5px;
+  --transition: 0.25s ease-out;
+}
+
+/* Commons ================================ */
+/* Fonts */
+
+@font-face {
+  src: url("../files/fonts/raleway-v22-cyrillic-300.woff2") format("woff2");
+  font-family: "raleway-wt";
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("../files/fonts/raleway-v22-cyrillic-500.woff2") format("woff2");
+  font-family: "raleway-wt";
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("../files/fonts/raleway-v22-cyrillic-600.woff2") format("woff2");
+  font-family: "raleway-wt";
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("../files/fonts/raleway-v22-cyrillic-700.woff2") format("woff2");
+  font-family: "raleway-wt";
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("../files/fonts/raleway-v22-cyrillic-800.woff2") format("woff2");
+  font-family: "raleway-wt";
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("../files/fonts/raleway-v22-cyrillic-900.woff2") format("woff2");
+  font-family: "raleway-wt";
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("../files/fonts/raleway-v22-cyrillic-regular.woff2") format("woff2");
+  font-family: "raleway-wt";
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("../files/fonts/roboto-v29-cyrillic-300.woff2") format("woff2");
+  font-family: "raleway-wt";
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("../files/fonts/roboto-v29-cyrillic-500.woff2") format("woff2");
+  font-family: "raleway-wt";
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  src: url("../files/fonts/roboto-v29-cyrillic-700.woff2") format("woff2");
+  font-family: "raleway-wt";
+  font-weight: 700;
+  font-style: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  z-index: 5;
+  color: #fff;
+  padding: 40px 0 27px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  left: 50px;
+  right: 50px;
+}
+
+.logo {
+  font-size: 17px;
+  white-space: nowrap;
+  line-height: 1.3;
+}
+
+.logo__link {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+}
+
+.logo__link:hover,
+.logo__link:focus,
+.logo__link:active {
+  color: #fff;
+}
+
+.logo__link span {
+  display: block;
+  font-size: 12px;
+  text-transform: none;
+  font-weight: 300;
+  letter-spacing: 3.5px;
+  opacity: 0.45;
+  margin-left: 23px;
+}
+
+.logo__link i {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  border: 2px solid var(--accent);
+  display: inline-block;
+  border-radius: var(--radius-style);
+  margin-right: 7px;
+}
+
+.top-menu {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.top-menu__item {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.top-menu__item:last-child {
+  margin-right: 0;
+}
+
+.top-menu__link {
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+  padding: 7.5px 16px;
+  border-radius: var(--radius-style);
+  transition: var(--transition);
+}
+
+.top-menu__link:hover,
+.top-menu__link:focus,
+span.top-menu__link {
+  color: #fff;
+  background-color: rgba(196, 196, 196, 0.2);
+  border-radius: var(--radius-style);
+}
+
+.menu-toggle {
+  width: 22px;
+  height: 22px;
+  background-image: url(../img/interface/menu-white.svg);
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+/* Navbar */
+
+  position: relative;
+  height: 100vh;
+  color: #fff;
+  background-color: var(--dark);
+}
