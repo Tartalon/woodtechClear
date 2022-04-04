@@ -19,4 +19,12 @@ document.addEventListener("DOMContentLoaded", () => {
     $(".menu-toggle").removeClass("menu-toggle_active");
     $(".top-menu").removeClass("top-menu_active");
   }
+
+  // Swiper Sliders
+
+  const homeSlider = new Swiper(".home-slider", {
+    speed: 800,
+    effect: "fade",
+    centeredSlides: true,
+  });
 });

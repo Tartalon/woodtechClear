@@ -12,22 +12,23 @@
     <link rel="icon" href="img/favicon.png" />
     <link rel="stylesheet" href="./libs/bootstrap-reboot.min.css" />
     <link rel="stylesheet" href="./libs/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="./libs/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media.css" />
   </head>
+
   <body>
     <div class="navbar">
       <div class="container">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-3 col-6">
             <div class="logo">
-              <a href="#" class="logo__link"
-                ><i></i>Woodtech <span>Architecture</span></a
-              >
+              <a href="#" class="logo__link"><i></i>Woodtech <span>Architecture</span></a>
             </div>
           </div>
 
-          <div class="col-md-9 col-lg-6 menu-container">
+          <div class="col-md-9 col-6 col-lg-6 menu-container">
             <i class="menu-toggle"></i>
             <ul class="top-menu">
               <li class="top-menu__item">
@@ -47,17 +48,52 @@
               </li>
             </ul>
           </div>
-          <div class="col-md-3 d-none d-lg-block">asd</div>
+
+          <div class="col-md-3 d-none d-lg-block nav-social-wrap">
+            <div class="nav-social">
+              <a class="nav-social__item" href="#" target="_blanc">
+                <img src="./img/fa-soc/white/instagram-brands.svg" alt="instagram icon" />
+              </a>
+              <a class="nav-social__item" href="#" target="_blanc">
+                <img src="./img/fa-soc/white/vk.svg" alt="instagram icon" />
+              </a>
+              <a class="nav-social__item" href="#" target="_blanc">
+                <img src="./img/fa-soc/white/facebook-brands.svg" alt="instagram icon" />
+              </a>
+              <a class="nav-social__item" href="#" target="_blanc">
+                <img src="./img/fa-soc/white/twitter-brands.svg" alt="instagram icon" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="home-slider">
-      <main></main>
-      <footer class="footer"></footer>
+      <div class="swiper-wrapper">
+        <div
+          class="swiper-slide home-slider__slide"
+          style="background-image: url(./img/portfolio/interior-3.jpg)"
+        >
+          <div class="container">
+            <h2 class="home-slider__heading">
+              Woodhouse <br /><span>дизайн на высоком уровне</span>
+            </h2>
+            <p class="home-slider__text">
+              Разработка и реализация красивых интерьеров из дерева ещё никогда не была так
+              доступна. Интерьеры из дерева различной породы сделают ваш дом уютным и тёплым, радуя
+              вас и ваших гостей.
+            </p>
+          </div>
+        </div>
+
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+      </div>
     </div>
 
     <script src="./libs/jquery-3.6.0.js"></script>
+    <script src="./libs/swiper-bundle.min.js"></script>
 
     <script src="./js/common.js"></script>
   </body>
