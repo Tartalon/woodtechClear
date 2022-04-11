@@ -1,4 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
+  MicroModal.init({
+    openTrigger: "data-custom-open",
+    closeTrigger: "data-custom-close",
+    disableScroll: true,
+    disableFocus: true,
+    awaitOpenAnimation: true,
+    awaiteCloseAnimation: true,
+  });
+
   $(".home-slider__heading").each(function () {
     let text = $(this).text().split(" ");
     let first = text.shift();
